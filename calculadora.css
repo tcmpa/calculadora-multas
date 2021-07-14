@@ -1,0 +1,199 @@
+:root { font-size: 16px; }
+*, *:after, *:before { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body, .calculadora {
+  height: 100%;
+  font-family: monospace;
+}
+
+.calculadora h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0 0 2.5rem;
+}
+
+.calculadora #aviso {
+  text-align: left;
+  margin: 2rem 0;
+}
+
+.calculadora #resultado {
+  text-align: left;
+  font-size: 1.2rem;
+  padding: 2rem;
+}
+.calculadora #resultado strong {
+  float: right;
+}
+.calculadora #resultado strong span {
+  font-size: 2rem;
+}
+.calculadora #resultado h4 {
+  text-align: left;
+  margin: 0 0 1rem;
+  font-size: 1.4rem;
+}
+.calculadora #resultado hr {
+  border: 0;
+  border-top: 3px dashed lightgray;
+  margin: 1rem 0;
+  width: 100%;
+}
+.calculadora #resultado p {
+  margin: 0;
+}
+.calculadora #resultado p:nth-child(4):after {
+  content: '🛈';
+  font-size: 1rem;
+  font-weight: bold;
+}
+a {
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  text-decoration: inherit;
+}
+
+.calculadora #calculo_pdf {
+  display: none;
+  width: auto;
+  margin: auto;
+  font-size: 1rem;
+}
+
+.calculadora #calculadora {
+  display: inline-block;
+  max-width: 360px;
+  margin: 2rem auto 0;
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  background: #eee;
+}
+
+.calculadora form input[type=radio], .calculadora form input[type=radio] + label {
+  display: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.font-mini {
+  font-size: 1rem;
+}
+
+.caixa-extenso {
+  margin-top: 30px;
+  padding: 1.5rem;
+  border: 3px lightgray dashed;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+}
+
+/*
+.calculadora form input {
+  width: 100%;
+  color: #000;
+}
+.calculadora form textarea {
+  width: 100%;
+  height: 160px;
+  resize: none;
+}
+.calculadora form input, .calculadora form textarea, .calculadora button {
+  font-weight: 400;
+  font-size: 1.2rem;
+  font-family: var(--fonte);
+ }
+ .calculadora form label {
+  float: left;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 0 0 .5rem;
+ }
+ .calculadora form input, .calculadora form textarea, .calculadora button {
+  padding: 0 .75rem;
+  margin: 0 auto 1.25rem;
+  line-height: 40px;
+  background: #fff;
+  border: 1px solid #000;
+  color: #000;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.calculadora form input[type=radio] {
+  position: absolute;
+  opacity: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: none;
+}
+.calculadora form input[type=radio] + label {
+  cursor: pointer;
+  margin: -.25rem 0 0;
+  float: right;
+  line-height: 0;
+  padding: 1rem;
+  background: #fff;
+  color: black;
+  font-size: 1rem;
+  border-radius: 2rem;
+  transition: all .25s;
+  display: none;
+}
+.calculadora form input[type=radio] + label:hover {
+  color: black;
+  background: lightgray;
+}
+.calculadora form input[type=radio]:checked + label {  
+  color: #fff;
+  background: black;
+}
+
+.calculadora form textarea:focus, .calculadora form textarea:active {
+  color: #000;
+  border-color: #000;
+}
+
+.calculadora form input[type=submit], button {
+  cursor: pointer;
+  margin: 1rem 0 0;
+  font-weight: bold;
+  width: 100%;
+  color: #fff;
+  background: black;
+}
+.calculadora form input[type=submit]:hover,
+.calculadora form input[type=submit]:focus {
+  opacity: .8;
+}
+
+
+.calculadora input::-webkit-input-placeholder {
+  color: #aaa;
+}
+.calculadora input:-moz-placeholder {
+  color: #aaa;
+}
+.calculadora input::-moz-placeholder {
+  color: #aaa;
+}
+.calculadora input:-ms-input-placeholder {
+  color: #aaa;
+}
+.calculadora input::-ms-input-placeholder {
+  color: #aaa;
+}
+.calculadora input::placeholder {
+  color: #aaa;
+}
+.calculadora input[type=date]::-webkit-inner-spin-button, 
+.calculadora input[type=date]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+  margin: 0;
+} */

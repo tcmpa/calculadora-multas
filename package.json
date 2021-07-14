@@ -1,0 +1,29 @@
+{
+  "name": "calculadora",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://srvgitdev.rtcmpa.local/lucas.menezes/calculadora.git"
+  },
+  "author": "lucasm.dev",
+  "license": "MIT",
+  "dependencies": {
+    "accounting": "^0.4.1",
+    "bootstrap": "^4.3.1",
+    "extenso": "^2.0.1",
+    "jquery": "^3.4.1",
+    "jquery-mask-plugin": "^1.14.16",
+    "jspdf": "^1.5.3",
+    "moment": "^2.24.0"
+  },
+  "devDependencies": {
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}

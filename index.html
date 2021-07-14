@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="dist/calculadora.min.css">
+	<link rel="icon" type="image/png" sizes="192x192" href="icon-192x192.png">
+
+	<title>Calculadora de Multa em UPFPA</title>
+  </head>
+  <body>
+
+	<div class="container calculadora">
+
+		<div class="row">
+
+			<div class="col-md-5">
+				
+				<form id="calculadora">
+
+					<h1>Calculadora de Multa em UPFPA <p class="font-mini">com atualização monetária e conversão para Real</p></h1>
+
+					<div class="valor form-group input-group-lg">
+						
+						<div class="form-group">
+							<input type="radio" name="moeda" class="moeda" id="real" value="real">
+							<label for="real" title="Real (R$)">Real</label>
+							<input type="radio" name="moeda" class="moeda" id="upfpa" value="upfpa" checked>
+							<label for="upfpa" title="Unidade Padrão Fiscal do Estado do Pará (UPF-PA)">UPF-PA</label>
+						</div>
+
+						<div class="form-group input-group-lg">
+							<label for="valor_multa">Valor da multa em UPF-PA</label>
+							<input class="form-control form-control-lg " type="text" name="multa" id="valor_multa" placeholder="UPF-PA" autocomplete="off" required>
+						</div>
+
+						<div class="form-group input-group-lg">
+							<label for="dataDaMulta">Data de trânsito em julgado</label>
+							<input class="form-control" id="dataDaMulta" type="date" name="data_multa" autocomplete="off" required>
+						</div>
+
+						<div class="form-group input-group-lg">
+							<label for="dataParaPagamento">Data para pagamento</label>
+							<input class="form-control" id="dataParaPagamento" type="date" name="data_pagamento" autocomplete="off" required>
+						</div>
+
+
+
+						<input class="btn btn-primary btn-lg " type="submit" value="Calcular">
+
+					</div>
+
+				</form>
+
+				<p id="aviso"></p>
+
+			</div>
+
+			<div class="col-md-7">
+
+				<div id="resultado">
+					<div class="alert alert-warning">Aguardando dados de entrada para efetuar o cálculo.</div>
+				</div>
+
+				<button id="calculo_pdf" class="btn btn-success">Baixar cálculo (PDF)</button>
+				
+				<noscript>Você precisa habilitar o JavaScript para executar este aplicativo.</noscript>
+
+			</div>
+
+		</div>
+
+	</div>
+
+    <!-- <script src="node_modules\jquery\dist\jquery.min.js"></script>
+    <script src="node_modules\jquery-mask-plugin\dist\jquery.mask.min.js"></script>
+    <script src="node_modules\accounting\accounting.min.js"></script>
+    <script src="node_modules\moment\min\moment.min.js"></script>
+	<script src="node_modules\moment\locale\pt-br.js"></script>
+	<script src="node_modules\extenso\dist\extenso.min.js"></script>
+	<script src="node_modules\jspdf\dist\jspdf.min.js"></script> -->
+	<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+	<script src="//cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+	<script src="dist/calculadora.min.js"></script>
+	<!-- <script src="calculadora.js"></script> -->
+
+  </body>
+</html>
